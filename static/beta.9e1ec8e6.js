@@ -3286,3 +3286,23 @@ parcelRequire = function(e, r, t, n) {
         "./Beta.svelte": "Glia"
     }]
 }, {}, ["EJAe"], null)
+
+
+
+// JavaScript code
+function search_animal() {
+    let input = document.getElementById('searchbar').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('mb-3');
+    let h3 = document.getElementsByTagName('h3');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+            
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
+}
