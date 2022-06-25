@@ -16,3 +16,7 @@ li.svelte-1muzss7.svelte-1muzss7{display:inline;list-style-type:none}li+li.svelt
   input[type=text]:focus {
     width: 70%;
   }
+p.warning {
+    justify-content: center;
+    text-align: center;
+}
