@@ -3156,7 +3156,7 @@ parcelRequire = function(e, r, t, n) {
                     c("saved", JSON.stringify(f.saved))
                 })),
                 a.then(function() {
-                    return fetch("https://thingproxy.freeboard.io/fetch/https://toc.qidianunderground.org/api/v1/pages/".concat(t, "/").concat(e.ID, "/chapters")).then(function(t) {
+                    return fetch("https://api.allorigins.win/raw?url=https://toc.qidianunderground.org/api/v1/pages/".concat(t, "/").concat(e.ID, "/chapters")).then(function(t) {
                         if (200 !== t.status)
                             throw new Error("failed to retrieve");
                         return t.json().then(function(t) {
@@ -3166,13 +3166,11 @@ parcelRequire = function(e, r, t, n) {
                 })
             }
             function d(t, e) {
-                return fetch("https://thingproxy.freeboard.io/fetch/https://toc.qidianunderground.org/api/v1/pages/".concat(t, "/chapters"), {
+                return fetch("https://api.allorigins.win/raw?url=https://toc.qidianunderground.org/api/v1/pages/".concat(t, "/chapters"), {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
-                        "Access-Control-Allow-Origin": "*",
-                        "Access-Control-Allow-Headers": "*",
-                        "Access-Control-Allow-Methods": "*"
+                       
 
                     },
                     body: JSON.stringify(e)
@@ -3215,7 +3213,7 @@ parcelRequire = function(e, r, t, n) {
                     try {
                         e && n(0, f.saved = JSON.parse(e), f)
                     } catch (r) {}
-                    return fetch("https://thingproxy.freeboard.io/fetch/https://toc.qidianunderground.org/api/v1/pages/".concat(t)).then(function(e) {
+                    return fetch("https://api.allorigins.win/raw?url=https://toc.qidianunderground.org/api/v1/pages/".concat(t)).then(function(e) {
                         if (200 !== e.status)
                             throw new Error("failed to retrieve");
                         return e.json().then(function(e) {
