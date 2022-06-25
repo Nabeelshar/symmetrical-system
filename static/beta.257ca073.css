@@ -1,1 +1,18 @@
 li.svelte-1muzss7.svelte-1muzss7{display:inline;list-style-type:none}li+li.svelte-1muzss7.svelte-1muzss7:before{content:" | "}@media(min-width:600px){aside.svelte-1muzss7>div.svelte-1muzss7{position:fixed;top:3rem}}
+#searchbar{
+    margin-left: 15%;
+    padding:15px;
+    border-radius: 10px;
+  }
+
+  input[type=text] {
+     width: 30%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  /* When the input field gets focus,
+       change its width to 100% */
+  input[type=text]:focus {
+    width: 70%;
+  }
